@@ -2,8 +2,8 @@ Dessert Pusher
 ===============
 
 Android application to learn Android Jetpack with Kotlin. Activity Lifecycle
-This project is based on [Course](https://www.udacity.com/course/developing-android-apps-with-kotlin--ud9012)
-Based in [repository](https://github.com/udacity/andfun-kotlin-dessert-pusher)
+
+This project is based on [Course](https://www.udacity.com/course/developing-android-apps-with-kotlin--ud9012) with [repository](https://github.com/udacity/andfun-kotlin-dessert-pusher)
 
 ![Scheme](/readmeImages/screen0.png)
 ![Scheme](/readmeImages/screen1.png)
