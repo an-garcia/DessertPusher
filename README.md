@@ -1,7 +1,7 @@
-Android Trivia
-=============
+Dessert Pusher
+===============
 
-Android application to learn Android Jetpack with Kotlin. Navigation.
+Android application to learn Android Jetpack with Kotlin. Activity Lifecycle
 This project is based on [Course](https://www.udacity.com/course/developing-android-apps-with-kotlin--ud9012)
 Based in [repository](https://github.com/udacity/andfun-kotlin-dessert-pusher)
 
