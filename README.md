@@ -31,7 +31,7 @@ Summary of Lifecycle State and Activity Lifecycle
 ![Scheme](/readmeImages/activity_lifecycle.png)
 
 
-#General Definitions
+# General Definitions
 
 Visible Lifecycle: The part of the Lifecycle between onStart and onStop when the Activity is visible.
 
@@ -58,6 +58,7 @@ Destroyed: Activity is destroyed. It can be ejected from memory at any point and
 
 
 # Activity Lifecycle Callbacks
+
 onCreate: This is called the first time the activity starts and is therefore only called once during the lifecycle of the activity. It represents when the activity is created and initialized. The activity is not yet visible and you can't interact with it. You must implement onCreate. In onCreate you should:
 
 - Inflate the activity's UI, whether that's using findViewById or databinding.
@@ -92,6 +93,7 @@ onDestroy: This is the mirror method to onCreate. It is called once when the act
 
 Summary of the Fragment Lifecycle
 -----------------------------------
+
 Fragments also have lifecycle states that they go between. The lifecycle states are the same as the activity states. You’ll notice that in your Android Trivia app, you’re using the onCreateView callback - while the fragment lifecycle states are the same, the callbacks are different.
 
 A deep dive into the fragment lifecycle could be a lesson in itself. Here, we’ll just cover the basics with the summary below:
@@ -114,6 +116,7 @@ onStop: Very similar to Activity’s onStop. This callback is called when the us
 
 
 # Other callbacks
+
 onAttach: When the fragment is first attached to the activity. This is only called once during the lifecycle of the fragment.
 
 onActivityCreated: Called when the activity onCreate method has returned and the activity has been initialized. If the fragment is added to an activity that's already created, this still gets called. It's purpose is to contain any code the requires the activity exists and it is called multiple times during the lifecycle of the fragment. Here you should:
@@ -137,11 +140,14 @@ onDetach: Called when the association between the fragment and the activity is d
 
 Lifecycle Cheat sheets
 -----------------------
+
 What you’ve seen up to this point are the Activity Lifecycle and the Fragment Lifecycle for a single Activity or Fragment. For more complicated apps, it becomes important to understand the interactions between Activity and Fragment life cycles and multiple activities. This is outside of the scope of this lesson, but there are a series of excellent blog posts and cheat sheets posted by Googler which are helpful references for this:
 
-[The Android Lifecycle cheat sheet — part I: Single Activity](https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-i-single-activities-e49fd3d202ab) - This is a visual recap of much of the material here.
-[The Android Lifecycle cheat sheet — part II: Multiple Activities](https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-ii-multiple-activities-a411fd139f24) - This shows the order of lifecycle calls when two activities interact.
-[The Android Lifecycle cheat sheet — part III: Fragments](https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-iii-fragments-afc87d4f37fd) - This show the order of lifecycle calls when an activity and fragment interact.
+- [The Android Lifecycle cheat sheet — part I: Single Activity](https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-i-single-activities-e49fd3d202ab) - This is a visual recap of much of the material here.
+- [The Android Lifecycle cheat sheet — part II: Multiple Activities](https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-ii-multiple-activities-a411fd139f24) - This shows the order of lifecycle calls when two activities interact.
+- [The Android Lifecycle cheat sheet — part III: Fragments](https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-iii-fragments-afc87d4f37fd) - This show the order of lifecycle calls when an activity and fragment interact.
+
+
 
 
 ## License
