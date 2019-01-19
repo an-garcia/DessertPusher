@@ -81,9 +81,9 @@ onPause: The mirror method to onResume. This method is called as soon as the act
 onStop: This is the mirror method to onStart. It is called when you can no longer see the activity. Here you should:
 
 - Stop any sensor, animations or other procedures that should not run when the activity is not on screen.
-- You can use this to persist (permanently save) data, which you’ll be learning more about in Lesson 6
+- You can use this to persist (permanently save) data.
 - Stop logic that updates the UI. This should not be running when the activity is off-screen; it's a waste of resources.
-- There are also restrictions as soon as the app goes into the background, which is when all activities in your app are in the background. We'll talk more about this in Lesson 9.
+- There are also restrictions as soon as the app goes into the background, which is when all activities in your app are in the background.
 
 onDestroy: This is the mirror method to onCreate. It is called once when the activity is fully destroyed. This happens when you navigate back out of the activity (as in press the back button), or manually call finish(). It is your last chance to clean up resources associated with the activity. Here you should:
 
@@ -112,7 +112,7 @@ onCreateView: This is called between onCreate and onActivityCreated. when the sy
 
 onStop: Very similar to Activity’s onStop. This callback is called when the user leaves your fragment. Here you should:
 
-- Save any permanent fragment state
+- Save any permanent fragment state.
 
 
 # Other callbacks
