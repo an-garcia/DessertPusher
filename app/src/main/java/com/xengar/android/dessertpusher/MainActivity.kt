@@ -28,7 +28,7 @@ import androidx.lifecycle.LifecycleObserver
 import com.xengar.android.dessertpusher.databinding.ActivityMainBinding
 import timber.log.Timber
 
-class MainActivity : AppCompatActivity(), LifecycleObserver {
+class MainActivity : AppCompatActivity(), LifecycleObserver{
 
     private var revenue = 0
     private var dessertsSold = 0
@@ -75,8 +75,8 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
             onDessertClicked()
         }
 
-        // Set the Timer
-        dessertTimer = DessertTimer()
+        // Setup dessertTimer, passing in the lifecycle
+        dessertTimer = DessertTimer(this.lifecycle)
 
         // Set the TextViews to the right values
         binding.revenue = revenue

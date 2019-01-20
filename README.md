@@ -148,6 +148,16 @@ What you’ve seen up to this point are the Activity Lifecycle and the Fragment 
 - [The Android Lifecycle cheat sheet — part III: Fragments](https://medium.com/androiddevelopers/the-android-lifecycle-cheat-sheet-part-iii-fragments-afc87d4f37fd) - This show the order of lifecycle calls when an activity and fragment interact.
 
 
+Lifecycle library
+-------------------
+Want to learn more about the lifecycle library?
+Check out the Google I/O talks introducing the library:
+
+- [Architecture Components I/O 2017](https://www.youtube.com/watch?v=FrteWKKVyzI)
+- [Lifecycles Library I/O 2017](https://www.youtube.com/watch?v=bEKNi1JOrNs)
+
+Note these talks go far beyond what we cover in the lesson. For just an introduction to using Lifecycle, LifecycleOwner and Lifecycle observation, check out the [Handling Lifecycles with Lifecycle-Aware Components Documentation](https://developer.android.com/topic/libraries/architecture/lifecycle)
+
 
 
 ## License
